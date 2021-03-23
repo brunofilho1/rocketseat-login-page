@@ -1,0 +1,192 @@
+:root {
+    --light-gray: rgb(32, 32, 36);
+    --black-gray: rgb(18, 18, 20);
+    --purple: rgb(130, 87, 230);
+    --black-purple: rgb(107, 71, 190);
+    --light-white: rgb(225, 225, 230);
+    --black-white: rgb(181, 181, 189);
+}
+
+* {
+    padding: 0px;
+    outline: currentcolor none 0px;
+    box-sizing: border-box;
+    margin: 0px;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background: var(--black-gray);
+    font: 1.6rem Roboto, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+h1 {
+    color: var(--light-white);
+    margin-bottom: 24px;
+    font-size: 54px;
+    line-height: 64px;
+    margin-top: 4rem;
+
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+p {
+    color: rgb(181, 181, 189);
+}
+
+#text-box {
+    margin: 5.5rem;
+}
+
+form {
+    margin: 5.5rem;
+    background: var(--light-gray);
+    width: 100%;
+    max-width: 480px;
+    border-radius: 5px;
+    padding: 64px;
+
+    align-items: center;
+    
+    display: flex;
+    flex-direction: column;
+
+    font: 1.6rem Roboto, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+
+}
+
+.login {
+    width: 100%;
+    height: 50px;
+    font-size: 16px;
+    background: var(--black-gray);
+    border-color: var(--black-gray);
+    color: var(--light-white);
+    padding: 0px 8em 0px 2.65em;
+    border-radius: 5px;
+    border: 2px solid var(--light-gray);
+    font-family: "Roboto", sans-serif;
+    
+}
+
+
+#login-box {
+    display: grid;
+    grid-auto-flow: row;
+    gap: 10px;
+}
+
+.esqueci {
+    margin: 0rem 0rem 1.8rem 0.2rem;
+    text-decoration: none;
+    color: var(--black-purple);
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.esqueci:hover {
+    color: var(--purple);
+    transition: 0.2s;
+}
+
+#entrar {
+    width: 100%;
+    height: 50px;
+    border-radius: 5px;
+    border: 0px none;
+    background: var(--black-purple);
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    color: var(--black-white);
+    cursor: pointer;
+
+    margin-bottom: 0rem;
+}
+
+#entrar:hover {
+    color: var(--light-white);
+    background: var(--purple);
+    transition: 0.2s;
+}
+
+.registre-se {
+    margin: 1rem 0.3rem 1rem;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-decoration: none;
+
+    font-size: 15px;
+
+}
+
+a.registre-se {
+    font-weight: bold;
+    color: var(--black-purple);
+}
+
+a.registre-se:hover {
+    color: var(--purple);
+    transition: 0.2s;
+}
+
+.github {
+
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-decoration: none;
+
+}
+
+#entre {
+    color: var(--light-white);
+}
+
+#github-div {
+    margin-top: 4rem;
+}
+
+#github-button svg {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    color: rgb(124, 98, 212);
+    transition: all 0.2s ease 0s;
+    color: var(--purple);
+}
+
+#github-button:hover svg {
+    color: var(--light-white);
+}
+
+#github-button {
+
+    width: 65%;
+    height: 50px;
+    border-radius: 5px;
+    border: 0px none;
+    background: rgba(41,41,46,255);
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    color: var(--light-white);
+    cursor: pointer;
+
+    margin-left: 2.5rem;
+
+}
+
+#github-button:hover {
+    background: var(--purple);
+    transition: 0.2s;
+}
+
