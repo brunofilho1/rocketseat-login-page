@@ -4,7 +4,7 @@
     --purple: rgb(130, 87, 230);
     --black-purple: rgb(107, 71, 190);
     --light-white: rgb(225, 225, 230);
-    --black-white: rgb(181, 181, 189);
+    --black-white: rgb(164, 164, 170);
 }
 
 * {
@@ -12,6 +12,7 @@
     outline: currentcolor none 0px;
     box-sizing: border-box;
     margin: 0px;
+
 }
 
 html {
@@ -21,6 +22,17 @@ html {
 body {
     background: var(--black-gray);
     font: 1.6rem Roboto, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+#global {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-decoration: none;
+
+    margin-top: 17rem;
 }
 
 h1 {
@@ -65,11 +77,16 @@ form {
     background: var(--black-gray);
     border-color: var(--black-gray);
     color: var(--light-white);
-    padding: 0px 8em 0px 2.65em;
+    padding: 0px 8em 0em 2.65em;
     border-radius: 5px;
     border: 2px solid var(--light-gray);
     font-family: "Roboto", sans-serif;
     
+}
+
+#email, #senha {
+    width: 100%;
+    padding-right: 0px 8em 0em 2.65em;
 }
 
 
@@ -92,10 +109,28 @@ form {
     transition: 0.2s;
 }
 
+#entrar.active {
+    width: 100%;
+    height: 50px;
+    border-radius: 6px;
+    border: 0px none;
+    background: var(--black-purple);
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    color: var(--black-white);
+    cursor: not-allowed;
+
+    border: 1px solid var(--light-gray);
+    border-color: var(--light-gray);
+
+    margin-bottom: 0rem;
+}
+
 #entrar {
     width: 100%;
     height: 50px;
-    border-radius: 5px;
+    border-radius: 6px;
     border: 0px none;
     background: var(--black-purple);
     font-family: "Roboto", sans-serif;
@@ -103,6 +138,9 @@ form {
     font-size: 16px;
     color: var(--black-white);
     cursor: pointer;
+
+    border: 1px solid var(--light-gray);
+    border-color: var(--light-gray);
 
     margin-bottom: 0rem;
 }
@@ -149,10 +187,18 @@ a.registre-se:hover {
 
 #entre {
     color: var(--light-white);
+    margin-left: 0rem;
 }
 
 #github-div {
     margin-top: 4rem;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-decoration: none;
+
 }
 
 #github-button svg {
@@ -168,9 +214,15 @@ a.registre-se:hover {
     color: var(--light-white);
 }
 
+#github-button-box {
+    width: 65%;
+    height: 50px;
+
+}
+
 #github-button {
 
-    width: 65%;
+    width: 100%;
     height: 50px;
     border-radius: 5px;
     border: 0px none;
