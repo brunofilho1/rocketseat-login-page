@@ -70,6 +70,46 @@ form {
 
 }
 
+/*ÍCONES ----------------------------*/
+  
+  input[type="email"]:focus, input[type="password"]:focus {
+    border-color: var(--purple);
+    box-shadow: 0 0 2px 0 var(--purple);
+  }
+  
+  #email-box, #password-box {
+    position: relative;
+  }
+  
+  #email-box i {
+    font-size: 14px;
+    position: absolute;
+    left: 1rem;
+    top: 10px;
+    padding: 9px 8px;
+    color: rgb(40, 39, 44);
+    transition: 0.3s;
+  }
+
+  #password-box i {
+    font-size: 18px;
+    position: absolute;
+    left: 1rem;
+    top: 10px;
+    padding: 9px 8px;
+    color: rgb(40, 39, 44);
+    transition: 0.3s;
+  }
+  
+  #email-box input[type="email"]:focus + i,
+  #password-box input[type="password"]:focus + i {
+    color: var(--purple);
+  }
+
+
+/*ÍCONES ----------------------------*/
+
+
 #email-box, #password-box {
     width: 35rem;
     height: 50px;
