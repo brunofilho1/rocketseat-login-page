@@ -100,6 +100,16 @@ form {
     color: rgb(40, 39, 44);
     transition: 0.3s;
   }
+
+  #password-box #eye {
+    font-size: 18px;
+    position: absolute;
+    left: 30.5rem;
+    top: 10px;
+    padding: 9px 8px;
+    color: var(--purple);
+    transition: 0.3s;
+  }
   
   #email-box input[type="email"]:focus + i,
   #password-box input[type="password"]:focus + i {
